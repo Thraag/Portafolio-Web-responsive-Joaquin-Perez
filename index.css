@@ -2,19 +2,17 @@
 	font-family: "Rubik";
 }
 
-body {
-	background: #202424;
-}
+
 
 body {
 	height: 100vh;
-	background: linear-gradient(45deg, #202424, #052031);
-	background-size: 1500% 1500%;
-	animation: gradient 10s ease-in infinite;
+	background-color: #0A0A0A;
+
+
 }
-.row {
-    
-}
+
+
+
 
 @keyframes gradient {
 	0% {
@@ -27,6 +25,32 @@ body {
 		background-position: 0% 50%;
 	}
 }
+
+.navdiv{
+	border-radius: 30px;
+	min-height: 3.6rem;
+	border: 1px solid #50536D;
+	font-size: 1rem;
+	background-color: transparent;
+		
+}
+
+.nav-item{
+	color: #b9b9b9;
+	font-weight: 420;
+}
+
+.punto{
+	color: #b9b9b9 !important;
+}
+
+
+
+.logosteconologias {
+	max-width: 80%;
+	margin-bottom: 2rem;
+}
+
 
 #titulo {
 	font-size: 80px;
@@ -51,23 +75,71 @@ body {
 	}
 }
 
+.card-proyectos{
+	border: solid 1px #363636;
+	border-radius: 28px;
+
+}
+
+.contenedorimagenproyectos {
+	border-radius: 28px 0 0 28px; /* Redondea solo las esquinas superiores */
+	overflow: hidden; /* Asegura que el contenido no se desborde */
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .card-proyectos {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    height: 200px; /* Ajusta la altura según sea necesario */
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.card-title {
+    font-size: 1.25rem;
+ 
+}
+
+.texto {
+    color: #ccc;
+    font-size: 0.875rem;
+}
+
 .pretitulo {
 	
 	color: white;
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 14px;
 }
 
 .subtitulo {
 	color: white;
 	padding-bottom: 16px;
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 14px;
 }
 
 .containerbuttonimportado {
 	text-align: center;
 }
+
+
 
 .downloadcv,
 .contact {
@@ -77,23 +149,27 @@ body {
 	font-weight: 700;
 }
 
+.bordeseccion1{
+	border: solid 1px #363636;
+	border-radius: 28px;
+	background-color: #0C0C0D;
+	
+}
+
 .sobremi {
 	font-weight: 800;
 	font-size: 35px;
 }
 
 .mifoto {
-	max-width: 250px;
-	min-width: 250px;
-	/* Establece el ancho máximo */
-	max-height: 250px;
-	/* Establece la altura máxima */
+	height: 3000px;
 }
 
 .texto {
-	color: white;
-	font-weight: 400;
-	font-size: 16px;
+	color: #969696;
+	font-weight: 420;
+	font-size: 18px;
+	line-height: 28px;
 }
 
 .textosobremi {
@@ -110,17 +186,10 @@ body {
 
 .rounded-circle {
 	width: 260px;
-	max-width: 260px;
-	max-height: 260px;
-	/* ajusta el tamaño del círculo según tus necesidades */
 	height: 260px;
-	/* ajusta el tamaño del círculo según tus necesidades */
 	object-fit: cover;
-	/* mantiene la relación de aspecto y ajusta la imagen dentro del círculo */
 	border-radius: 50%;
-	/* hace que el borde sea completamente redondeado */
 	object-position: center top;
-	/* posiciona la imagen en el centro vertical y abajo */
 }
 
 .logo {
@@ -142,10 +211,20 @@ body {
 	}
 }
 
+
+
+
 .fa-github,
 .fa-linkedin,
-.fa-envelope {
-	font-size: 30px;
+.fa-envelope,
+.fa-pen-nib {
+	font-size: 5rem;
+	background-image: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff);
+	background-size: 200% 100%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animate-gradient 2.5s linear infinite;
 }
 
 .btn-secondary {
@@ -216,7 +295,7 @@ body {
 }
 
 .card {
-	min-height: 130px;
+	min-height: 16rem;
 	max-height: 130px;
 	overflow: hidden;
 	/* Esto ocultará cualquier parte de la imagen que se desborde de la tarjeta */
@@ -291,7 +370,72 @@ a {
 	resize: none !important;
 }
 
-.divchallenge{
-	background-color: black;
+
+
+
+
+@media (max-width: 576px) {
+	.paddingespecial {
+	  padding-bottom: 3rem !important;
+	  ;
+	}
+  }
+
+  @media (max-width: 576px) {
+	.contenedorfoto {
+	  padding-bottom: 24px !important;
+	  ;
+	}
+  }
+
+.logito{
+	margin: 1.5rem;
+
 }
 
+.texto-punto{
+	color: #faebff !important;
+
+}
+
+.navbar-toggler-icon {
+	background-image: none; /* Elimina la imagen por defecto */
+	position: relative;
+  }
+  
+  .navbar-toggler-icon::before,
+  .navbar-toggler-icon::after,
+  .navbar-toggler-icon {
+	content: '';
+	display: block;
+	width: 24px;
+	height: 2px;
+	background-color: #751379; /* Cambia este color */
+	position: absolute;
+	transition: all 0.4s ease-in-out;
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  
+  .navbar-toggler-icon::before {
+	top: -8px;
+  }
+  
+  .navbar-toggler-icon::after {
+	bottom: -8px;
+  }
+
+
+  body {
+	background-color: black;
+	background-image: radial-gradient(
+	  circle at 50% -6%,
+	 
+	  rgba(128, 0, 128, 0.7) 1%,
+	  transparent 25%
+	);
+	background-size: 110% 120%;
+	background-position: center;
+	min-height: 600vh;
+
+  }
